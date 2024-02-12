@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">calcullate</string>
+    <string name="hint1">Ведите первое число</string>
+    <string name="hint2">Ведите второе число</string>
+</resources>

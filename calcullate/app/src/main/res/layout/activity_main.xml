@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Калькулятор"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/number_filed_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="@string/hint1"
+        android:inputType="text"
+        android:minWidth="100dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <EditText
+        android:id="@+id/number_filed_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:hint="@string/hint2"
+        android:inputType="text"
+        android:minWidth="100dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp"
+        android:text=""
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_filed_2" />
+
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="69dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/round_button"
+        android:text="x"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultt" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="69dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/round_button"
+        android:text="-"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultt" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="69dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/round_button"
+        android:text="÷"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultt" />
+
+    <Button
+        android:id="@+id/with"
+        android:layout_width="69dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/round_button"
+        android:text="+"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultt" />
+
+    <Button
+        android:id="@+id/percent"
+        android:layout_width="69dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/round_button"
+        android:text="%"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
+
+    <Button
+        android:id="@+id/root"
+        android:layout_width="69dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/round_button"
+        android:text="√"
+
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
+
+    <TextView
+        android:id="@+id/resultt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="28dp"
+        android:text=""
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_filed_2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
