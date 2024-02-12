@@ -1,0 +1,39 @@
+package zadanie2;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Zadanie2 {
+    public void vod () {
+        WebDriver driver = new ChromeDriver();
+
+        driver.get("https://suninjuly.github.io/simple_form_find_task.html");
+
+        WebElement firstName = driver.findElement(By.name("first_name"));
+
+        firstName.sendKeys("Artem");
+
+        WebElement lastName = driver.findElement(By.name("last_name"));
+        lastName.sendKeys("Khalilov");
+
+        WebElement city = driver.findElement(By.name("firstname"));
+        city.sendKeys("Moscow");
+
+        WebElement Country = driver.findElement(By.id("country"));
+        Country.sendKeys("Russia");
+
+
+        WebElement click = driver.findElement(By.xpath("//button[text()='Submit']"));
+        click.click();
+
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        driver.quit();
+    }
+}
